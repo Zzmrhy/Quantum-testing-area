@@ -37,7 +37,7 @@ operation Main() : (Int, Int, Int, Int) {
     SetQubitState(Zero, q2);
 
     Message($"Q1 - Zeros: {count - numOnesQ1}");
-    Message($"Q1 - ones: {numOnesQ1}");
+    Message($"Q1 - Ones: {numOnesQ1}");
     Message($"Q2 - Zeros: {count - numOnesQ2}");
     Message($"Q2 - Ones: {numOnesQ2}");
     
