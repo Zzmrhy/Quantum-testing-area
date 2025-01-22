@@ -6,13 +6,12 @@ operation Main() : Int {
     let max = 100;
     Message($"Sampling a random number between 0 and {max}");
 
-
     return GenerateRandomNumberInRange(max)
 }
 
-operation GenerateRandomNumberInRange(max: Int) : Int {
+operation GenerateRandomNumberInRange(max : Int) : Int {
     mutable bits = [];
-    
+
     let nBits = BitSizeI(max);
 
     for idxBit in 1..nBits {
